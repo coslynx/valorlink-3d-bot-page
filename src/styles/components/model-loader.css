@@ -1,0 +1,26 @@
+.model-loader-container {
+  @apply flex items-center justify-center h-full w-full;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.model-loader-spinner {
+  @apply animate-spin rounded-full border-t-2 border-b-2 border-red-500 h-6 w-6;
+}
+
+.model-loader-error {
+  @apply text-red-500 font-roboto aria-live-assertive p-4;
+}
+
+@media (max-width: 640px) {
+  .model-loader-container {
+    @apply h-auto; /* Adjust height for content on smaller screens */
+  }
+}
