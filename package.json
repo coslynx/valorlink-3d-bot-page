@@ -1,0 +1,36 @@
+{
+  "name": "valorant-bot-landing",
+  "version": "0.1.0",
+  "description": "3D Landing page for a Valorant Discord Bot",
+  "private": true,
+  "type": "module",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json}\""
+  },
+  "dependencies": {
+    "@react-three/drei": "10.0.7",
+    "@react-three/fiber": "9.1.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-router-dom": "7.6.0",
+    "three": "0.176.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.4.1",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.26.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "8.5.3",
+    "prettier": "3.2.5",
+    "tailwindcss": "4.1.6",
+    "typescript": "*",
+    "vite": "6.3.5",
+    "vite-plugin-compression": "0.5.1"
+  }
+}
