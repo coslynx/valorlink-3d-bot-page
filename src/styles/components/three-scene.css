@@ -1,0 +1,19 @@
+.three-scene-container {
+  @apply w-full h-full block;
+}
+
+.three-scene-container section {
+  @apply py-12;
+}
+
+.three-scene-container section div {
+  @apply container mx-auto;
+}
+
+.three-scene-container section div p {
+  @apply text-center;
+}
+
+.three-scene-container .error-message {
+  @apply bg-black text-white flex items-center justify-center h-full text-center;
+}
