@@ -1,0 +1,15 @@
+node_modules/
+ build/
+ dist/
+ .DS_Store
+ Thumbs.db
+ *.log
+ *.lock
+ .env
+ .env.*.local
+ *.swp
+ *.swo
+ .vscode/
+ /src/components/3d/Models/*
+ !/src/components/3d/Models/*.glb
+ !/src/components/3d/Models/*.gltf
