@@ -1,0 +1,66 @@
+@tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+
+ /*
+ CSS Reset & Base Styles
+ This CSS reset is applied using the `@layer base` directive in Tailwind CSS.\
+ It aims to provide a consistent starting point across different browsers and devices.\
+ For error handling, CSS validator tools can be used to identify syntax errors or invalid properties.\
+ Browser developer tools (e.g., Chrome DevTools, Firefox Developer Tools) can be used to inspect the applied styles and identify any rendering issues.\
+ */
+ @layer base {
+  /* Set box-sizing to border-box for all elements */
+  *,
+  *::before,
+  *::after {
+  box-sizing: border-box;
+  }
+ 
+
+  /* Reset default body styles */
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  color: #FFFFFF;
+  }
+ 
+
+  /* Global typography configuration */
+  h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  color: inherit;
+  }
+ 
+
+  /* Reset button styles */
+  button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  }
+ 
+
+  /* Reset list styles */
+  ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+ 
+
+  /* Base style for links */
+  a {
+  text-decoration: none;
+  color: inherit;
+  }
+ }
+ 
+
+ /*How component specific css styles will point this file is through imports, such as the below:*/
+ /*import 'src/styles/base.css';*/
