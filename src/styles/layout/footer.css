@@ -1,0 +1,11 @@
+.footer {
+  @apply bg-black text-white py-4 text-center font-roboto;
+}
+
+.footer-container {
+  @apply container mx-auto px-6;
+}
+
+.footer a {
+  @apply hover:text-red-500;
+}
