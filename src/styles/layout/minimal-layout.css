@@ -1,0 +1,17 @@
+/* src/styles/layout/minimal-layout.css */
+
+/* Styles for the MinimalLayout component. This provides a basic
+   container layout with a max-width for centering content and padding. */
+.minimalLayout {
+  /* Centers content horizontally within its parent. */
+  @apply mx-auto;
+
+  /* Provides vertical padding using the spacing scale. */
+  @apply py-8;
+}
+
+/* Container class to ensure responsive layout, has a maximum width on larger screens */
+.container {
+  @apply mx-auto px-4; /* Provide horizontal padding on smaller screens */
+  max-width: 1280px;   /* Maximum width of the container */
+}
