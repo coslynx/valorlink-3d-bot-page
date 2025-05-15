@@ -1,0 +1,23 @@
+.landing-hero {
+  @apply relative py-24 overflow-hidden;
+}
+
+.landing-hero-content {
+  @apply container mx-auto px-6 relative z-10;
+}
+
+.landing-hero-title {
+  @apply font-roboto text-5xl font-bold text-center md:text-left md:text-6xl lg:text-7xl mb-4 text-red-500;
+}
+
+.landing-hero-description {
+  @apply font-roboto text-md text-center md:text-left md:text-lg mb-8;
+}
+
+.landing-hero-button-container {
+  @apply text-center md:text-left;
+}
+
+.landing-hero-three-scene {
+  @apply absolute top-0 left-0 w-full h-full;
+}
