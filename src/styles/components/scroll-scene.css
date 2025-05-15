@@ -1,0 +1,37 @@
+/* src/styles/components/scroll-scene.css */
+
+/*
+  Styling for the ScrollScene component, ensuring full viewport coverage,
+  proper layering, and a smooth rendering experience. Includes modifiers
+  for dark theme and loading states.
+*/
+.scroll-scene {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  /* Antialiasing and subpixel rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+  .scroll-scene {
+    height: auto; /* Adjust height for content on smaller screens */
+  }
+}
+
+/* Dark theme modifier */
+.scroll-scene--dark {
+  background-color: #1a1a1a; /* Consistent dark background */
+  color: #ffffff; /* Ensure text is readable */
+}
+
+/* Loading state modifier */
+.scroll-scene--loading {
+  opacity: 0.7; /* Dim the scene slightly */
+  pointer-events: none; /* Prevent interaction */
+}
