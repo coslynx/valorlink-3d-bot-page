@@ -1,0 +1,22 @@
+/* src/styles/ui/theme-toggle.css */
+
+.theme-toggle {
+  @apply bg-white dark:bg-black rounded-full shadow-md transition-colors duration-300 p-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500 relative;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  @apply opacity-80;
+}
+
+.theme-toggle svg {
+  @apply w-6 h-6 text-red-500 transition-colors duration-300;
+}
+
+.theme-toggle .dark-mode svg {
+  @apply text-red-500;
+}
