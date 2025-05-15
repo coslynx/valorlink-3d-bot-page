@@ -1,0 +1,68 @@
+.header {
+  /* Fixed header layout */
+  @apply fixed top-0 w-full z-50 bg-black text-white;
+}
+
+.header__nav {
+  /* Navigation container styling */
+  @apply container mx-auto py-4 px-6 flex items-center justify-between;
+}
+
+.header__bot-name {
+  /* Bot name link styling */
+  @apply text-xl font-bold;
+}
+
+.header__bot-name-link {
+  /* Bot name link font */
+  @apply font-exo-2;
+}
+
+.header__nav-links {
+  /* Navigation links styling (hidden on small screens, flex on medium+) */
+  @apply hidden md:flex space-x-6 items-center;
+}
+
+.header__nav-link {
+  /* Individual nav link styling */
+  @apply hover:text-red-500;
+}
+
+.header__mobile-menu-button {
+  /* Mobile menu button styling (visible on small screens, hidden on medium+) */
+  @apply block md:hidden;
+}
+
+.header__mobile-menu-icon {
+  /* Mobile menu icon styling */
+  @apply fill-current h-6 w-6;
+}
+
+.header__mobile-menu {
+  /* Mobile menu styling (hidden on medium+, block when open) */
+  @apply md:hidden;
+}
+
+/* Conditionally apply 'block' or 'hidden' class based on React state */
+.header__mobile-menu.block {
+  display: block;
+}
+
+.header__mobile-menu.hidden {
+  display: none;
+}
+
+.header__mobile-menu-list {
+  /* Mobile menu list styling */
+  @apply bg-black py-2 px-6 space-y-2;
+}
+
+.header__mobile-menu-item {
+  /* Mobile menu item styling */
+  @apply block hover:text-red-500;
+}
+
+.header__theme-toggle-container {
+  /* Theme toggle container in mobile menu */
+  @apply py-2;
+}
